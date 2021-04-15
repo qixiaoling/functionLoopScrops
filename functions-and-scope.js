@@ -138,3 +138,4 @@ console.log(checkHighest(grades))
 // highestGrade([8, 9, 4, 6, 10]) geeft 10
 console.log(checkHighest([6, 4, 5]))
 console.log(checkHighest([8, 9, 4, 6, 10]))
+//this is the new version
