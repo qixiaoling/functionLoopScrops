@@ -74,4 +74,4 @@ console.log(checkEmailValidity(emailE))
 console.log(checkEmailValidity(emailF))
 console.log(checkEmailValidity(emailG))
 console.log(checkEmailValidity(emailH))
-//this is the new version
+//new
