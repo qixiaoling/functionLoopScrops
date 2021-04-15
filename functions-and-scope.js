@@ -14,18 +14,6 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden?
 // Log het antwoord in de terminal.
 
-function countCL(array){
-    let tellerCL = 0;
-    for(let i=0; i<array.length; i++){
-        if(array[i]>=8){
-            tellerCL = tellerCL+1;
-        }
-    }
-    return tellerCL
-}
-console.log(countCL(grades))
-console.log(countCL([6, 4, 5]))
-console.log(countCL([8, 9, 4, 6, 10]))
 
 
 
@@ -51,8 +39,6 @@ console.log(countCL([8, 9, 4, 6, 10]))
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
-console.log(countCL([6, 4, 5]))
-console.log(countCL([8, 9, 4, 6, 10]))
 
 
 /* Opdracht  2: Gemiddeld cijfer */
@@ -66,15 +52,7 @@ console.log(countCL([8, 9, 4, 6, 10]))
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6.642857142857143
-function averageGrades(array){
-    let sum = 0;
-    for(let i=0; i<array.length; i++){
-        sum = sum + array[i]
-    }
-    const avg = sum / array.length
-    return avg;
-}
-console.log(averageGrades(grades))
+
 
 /* 2b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
@@ -85,18 +63,12 @@ console.log(averageGrades(grades))
 // averageGrade(grades) geeft 6.642857142857143
 // averageGrade([6, 4, 5]) geeft xxxx
 // averageGrade([8, 9, 4, 6, 10]) geeft xxxx
-console.log(averageGrades([6, 4, 5]))
-console.log(averageGrades([8, 9, 4, 6, 10]))
 
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-function afgerond(num){
-    const resultAfGeRond = Math.round(num*100)/100;
-    return resultAfGeRond
-}
-console.log(afgerond(averageGrades(grades)))
+
 
 
 
@@ -108,18 +80,6 @@ console.log(afgerond(averageGrades(grades)))
 // * Op welke conditie moet ik checken?
 // * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan opslaan?
 // Log het antwoord in de terminal.
-
-function checkHighest(array){
-    let highest = 0
-    for(let i=0; i<array.length; i++){
-
-        if (array[i] > highest){
-            highest = array[i]
-        }
-    }
-    return highest
-}
-console.log(checkHighest(grades))
 
 
 
@@ -136,5 +96,3 @@ console.log(checkHighest(grades))
 // highestGrade(grades) geeft 9
 // highestGrade([6, 4, 5]) geeft 6
 // highestGrade([8, 9, 4, 6, 10]) geeft 10
-console.log(checkHighest([6, 4, 5]))
-console.log(checkHighest([8, 9, 4, 6, 10]))
